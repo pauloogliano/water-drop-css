@@ -1,0 +1,59 @@
+:root {
+  --brightness: #FFF;
+  --top-brightness: #c7c7c7;
+  --middle-brightness: #e0e0e0;
+  --bottom-brightness: #c8c8c8;
+}
+
+* {
+  border-box: sizing;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #e1e1e1;
+}
+
+.wrapper {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.water-drop {
+  height: 150px;
+  width: 150px;
+
+  background: transparent;
+  border-radius: 58% 43% 43% 64% / 50% 38% 50% 50%;
+  box-shadow: inset 6px 26px 20px 0 var(--top-brightness), inset 20px 80px 15px 0 var(--middle-brightness), 10px 20px 20px 0px var(--bottom-brightness);
+}
+
+.water-drop-brightness {
+  width: 50px;
+  height: 15px;
+
+  background: var(--brightness);
+  border-radius: 37% 54% 46% 46%;
+
+  transform: rotate(-30deg);
+
+  position: relative;
+  top: 10%;
+  left: 15%;
+}
+
+.water-drop-circle {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  background: var(--brightness);
+
+  position: relative;
+  top: 25%;
+  left: 12%;
+}
